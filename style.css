@@ -106,6 +106,28 @@ body {
     margin-top: 40px;
   }
 
-  h2 {
-    text-align: center;
-  }
+  .footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    display:block;
+}
+
+footer .navigation {
+  font-size: 20px;
+  font-weight: 450;
+}
+
+footer .navigation a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+footer .navigation a:hover {
+  text-decoration: underline;
+}
+
+
+
+
