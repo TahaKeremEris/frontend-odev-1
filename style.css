@@ -81,7 +81,7 @@ body {
   .articles .grid-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-gap: 100px;
   }
   
   .articles .grid-item {
