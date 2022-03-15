@@ -11,7 +11,8 @@ body {
 /* Header */
 
 header {
-  font-family: 'Montserrat', sans-serif;
+  
+  font-family: 'Playfair Display', serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,17 +45,18 @@ header .navigation a:hover {
 /* Hero */
 
 .hero h1 {
-  color: #616161;
+  color: #3a3e48;
   font-size: 42px;
   font-weight: 400;
   line-height: 1.33;
   letter-spacing: -0.5px;
   margin-top: 200;
+  margin-right: 300px;
   
 }
 
 .hero a {
-  color: #000000;
+  color: #3a3e48;
   text-decoration: none;
   font-weight: 750;
 }
@@ -69,6 +71,7 @@ header .navigation a:hover {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-top: 230px;
+  font-family: 'Playfair Display', serif;
   
 }
 
@@ -76,12 +79,14 @@ header .navigation a:hover {
   font: 12px;
   font-weight: 200;
   color: #616161;
+  font-family: 'Playfair Display', serif;
 }
 
 .articles .grid-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
+  font-family: 'Playfair Display', serif;
 }
 
 .articles .grid-item {
@@ -91,28 +96,36 @@ header .navigation a:hover {
 .articles .grid-group .grid-item img {
   width: 100%;
   height: 400px;
+  font-family: 'Playfair Display', serif;
 }
 
 .articles .grid-group .grid-item h3 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 250;
   margin-top: 20px;
   margin-bottom: 0px;
+  font-family: 'Playfair Display', serif;
 }
 
 .articles .grid-group .grid-item .category {
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 300;
   margin-top: 40px;
+  font-family: 'Playfair Display', serif;
 }
 
 footer {
+font-family: 'Playfair Display', serif;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 margin-top: 100px;
 margin-bottom: 50px;
+color: #6d7381;
+font-weight: 450;
+font-size: 17px;
 }
+
 
 footer .navigation {
 font-size: 20px;
@@ -120,13 +133,41 @@ font-weight: 450;
 }
 
 footer .navigation a {
-color: #000000;
+color: #6d7381;
 text-decoration: none;
 margin-left: 40px;
 }
 
 footer .navigation a:hover {
 text-decoration: underline;
+}
+
+section.citation .content{
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-size: xx-large;
+  color: #3a3e48;
+}
+
+section.citation .content2{
+  font-family:'Playfair Display', serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  font-size: xx-large;
+  margin-bottom: 220px
+  
+}
+
+section.citation .content2{
+  color: #3a3e48;
+
 }
 
 
