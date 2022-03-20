@@ -200,6 +200,7 @@ color: #6d7381;
 font-weight: 450;
 font-size: 17px;
 font-family: 'Playfair Display', serif;
+align-items: flex-end;
 }
 
 footer .navigation {
