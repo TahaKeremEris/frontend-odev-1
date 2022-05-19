@@ -2,16 +2,86 @@ body {
   font-size: 16px;
 }
 
-#container {
+/* Mobile */
+@media (max-width: 768px) {
+
+ /* Container */
+ #container {
+  width: 90%;
+  margin: auto;
+ }
+
+ /* Header */
+ header .navigation {
+  display: none;
+ }
+
+ header .mobileNavigation {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+ }
+
+ /* Hero */
+ .hero h1 {
+  font-size: 24px;
+ }
+
+ /* Articles */
+ .articles .grid-group {
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+ }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+
+ /* Container */
+ #container {
   width: auto;
   margin-left: 100px;
   margin-right: 100px;
+ }
+
+ /* Header */
+ header .mobileNavigation {
+  display: none;
+ }
+
+ header .navigation {
+  font-size: 20px;
+  font-weight: 300;
+ }
+
+ header .navigation a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 40px;
+ }
+
+ header .navigation a:hover {
+  text-decoration: underline;
+ }
+
+ /* Hero */
+ .hero h1 {
+  font-size: 42px;
+  margin-right: 300px;
+ } 
+
+  /* Articles */
+ .articles .grid-group {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+ }
 }
+
+/* Asıl CSS */
 
 /* Header */
 
 header {
-  
   font-family: 'Playfair Display', serif;
   display: flex;
   flex-direction: row;
@@ -25,6 +95,17 @@ header .title {
   font-size: 28px;
   color: #2b2b2b;
   text-decoration: none;
+}
+
+.mobileMenu {
+  display: none;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.mobileMenuActive {
+  display: block !important;
 }
 
 header .navigation {
@@ -51,7 +132,7 @@ header .navigation a:hover {
   line-height: 1.33;
   letter-spacing: -0.5px;
   margin-top: 200;
-  margin-right: 300px;
+  
   
 }
 
@@ -84,14 +165,9 @@ header .navigation a:hover {
 
 .articles .grid-group {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 100px;
-  font-family: 'Playfair Display', serif;
 }
 
-.articles .grid-item {
-
-}
 
 .articles .grid-group .grid-item img {
   width: 100%;
@@ -108,14 +184,13 @@ header .navigation a:hover {
 }
 
 .articles .grid-group .grid-item .category {
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 300;
   margin-top: 40px;
   font-family: 'Playfair Display', serif;
 }
 
 footer {
-font-family: 'Playfair Display', serif;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -124,8 +199,9 @@ margin-bottom: 50px;
 color: #6d7381;
 font-weight: 450;
 font-size: 17px;
+font-family: 'Playfair Display', serif;
+align-items: flex-end;
 }
-
 
 footer .navigation {
 font-size: 20px;
@@ -143,33 +219,44 @@ text-decoration: underline;
 }
 
 section.citation .content{
-  font-family: 'Playfair Display', serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  font-size: xx-large;
-  color: #3a3e48;
+font-family: 'Playfair Display', serif;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 150px;
+font-size: xx-large;
+color: #3a3e48;
 }
 
 section.citation .content2{
-  font-family:'Playfair Display', serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 0px;
-  font-size: xx-large;
-  margin-bottom: 220px
-  
+font-family:'Playfair Display', serif;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 0px;
+font-size: xx-large;
+margin-bottom: 220px
+
 }
 
 section.citation .content2{
-  color: #3a3e48;
+color: #3a3e48;
 
 }
 
 
+/*liste*/
 
+ul li.i {
+      
+list-style-image: url("https://img.icons8.com/doodle/48/000000/apple-mail.png");     
 
+}
+
+ul li.c {
+      
+list-style-image: url("https://img.icons8.com/clouds/100/000000/instagram-new--v1.png");     
+
+}
